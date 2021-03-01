@@ -34,6 +34,8 @@ print(nowa)
 nowa.sort()
 print(nowa)
 """
+
+"""
 slownik = {1: 111, 2:222, "klucz":"Wartosc"}
 print(slownik)
 print(slownik["klucz"])
@@ -46,8 +48,23 @@ print(slownik)
 
 print(slownik.keys())
 print(slownik.values())
+"""
+"""
+if true:
+	print("prawda to")
+elif
+"""
 
-
+a = input("podaj liczbęłę: ")
+b = input("podaj jeszcze jedną liczbęłę: ")
+a = int(a)
+b = int(b)
+if a>b:
+	print("pierwsza jest większa")
+elif b>a:
+	print("druga jest większa")
+else:
+	print("równe")
 
 
 
