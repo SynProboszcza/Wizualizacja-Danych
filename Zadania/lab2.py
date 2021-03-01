@@ -95,6 +95,47 @@ while z!=10:
 else:
 	print("\n" + str(z) + " wyswietlen")
 """
+"""
+lista = [5, 7, 9, 3, 45, 1, 8, 333, 1337, 0, 45, 9, 6, 666, 420, 789, 456, 123]
+
+liczba = input('liczba plsss: ')
+
+licznik = 0
+while licznik < len(lista) - 1:
+	if int(liczba) - lista[licznik] == 0:
+		print("Znalazlem taką liczbę w swojej liście")
+		break
+	else:
+		licznik += 1
+"""
+
+"""
+lista = [5, 7, 9, 3, 45, 1, 8, 333, 1337, 0, 45, 9, 6, 666, 420, 789, 456, 123]
+lista2 = [5, 97, 99, 93, 945, 91, 98, 9333, 91337]
+suma = []
+
+for a in lista:
+	for b in lista2:
+		wynik = a + b
+		suma.append(wynik)
+print(suma)
+
+# weź pierwszy element pierwszej listy
+# weź pierwszy element drugiej listy
+# dodaj je i zapisz
+# 
+# potem weź pierwszy element pierwszej listy
+# weź drugi element drugiej listy
+# dodaj je i zapisz
+# 
+# wykonaj dla każdego elementu z drugiej listy
+# potem przejdź do drugiego wyrazu z pierwszej listy i powtórz
+# 
+# 
+# 
+"""
+
+
 
 
 
