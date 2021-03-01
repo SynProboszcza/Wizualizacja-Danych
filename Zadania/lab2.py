@@ -55,16 +55,48 @@ if true:
 elif
 """
 
+"""
 a = input("podaj liczbęłę: ")
 b = input("podaj jeszcze jedną liczbęłę: ")
 a = int(a)
 b = int(b)
 if a>b:
-	print("pierwsza jest większa")
+    print("pierwsza jest większa")
 elif b>a:
-	print("druga jest większa")
+    print("druga jest większa")
 else:
-	print("równe")
+    print("równe")
+"""
+
+"""
+for licznik in sekwencja:
+	in1
+	in2
+else:
+	print("koniec")
+"""
+
+"""
+for x in range(1,6,1):
+	print(x)
+"""
+
+"""
+lista = [1,2,3,4,5,6,7,8,9,0]
+for x in lista:
+	print(x)
+"""
+
+"""
+z = 0 # wrrrrrrrrrrrrrrrrrr
+while z!=10:
+	print(z)
+	z+=1
+else:
+	print("\n" + str(z) + " wyswietlen")
+"""
+
+
 
 
 
