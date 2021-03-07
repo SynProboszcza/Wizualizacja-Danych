@@ -37,6 +37,16 @@ print(slownik)
 #wrocic do tego, nie rozumiem o co chodzi z tym kluczem bo nie moze on byc duplikatem
 """
 #Zad 3. Stwórz skrypt, gdzie utworzysz słownik z nazwami przedmiotów z obecnego semestru oraz ich skrótami. Policz liczbę elementów w słownik
-
+przedmioty = {
+	"Wizualizacja danych":"WD",
+	"CAD komputerowe wspomaganie programowania":"CAD-kwp",
+	"Przedmiot humanizujący":"human",
+	"Język angielski":"angol",
+	"Rachunek różniczkowy i całkowy":"rachun",
+	"Elementy matematyki dyskretnej":"matma",
+	"Programowanie strukturalne":"PS"
+}
+print(przedmioty)
+print(len(przedmioty))
 
 
