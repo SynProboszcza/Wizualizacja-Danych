@@ -60,7 +60,8 @@ if float(wejscie)==int(float(wejscie)):
 else:
 	print("Float")
 	print((float(wejscie)**float(wejscie)))
-#wiem że to koszmarnie wygląda ale python nie pozwala zrobić czegoś takiego: int('1.0')
+#wiem że to koszmarnie wygląda ale python nie pozwala zrobić czegoś takiego: int('1.0'), za to int(1.0) idzie normalnie,
+#dlatego najpierw rzutuje do floata, a potem z floata do inta
 #https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10
 """
 #Zad 5. Napisz skrypt gdzie wczytasz dowolny ciąg znaków, i policzysz wystąpienie litery a. Użyj instrukcji readline() i write()).
@@ -86,12 +87,30 @@ elif a%2!=0:
 	print("a jest nieparzysta, i b!>c")
 """
 
-#Zad 7. Napisz skrypt, gdzie stworzysz listę składającą się z liczb typu int i float. Następnie za pomocą pętli for oblicz sumę elementu obecnego z poprzednim.
+#Zad 8. Napisz skrypt, gdzie stworzysz listę składającą się z liczb typu int i float. Następnie za pomocą pętli for oblicz sumę elementu obecnego z poprzednim.
 """
 lista = [1,1.5,2,2.5,3,3.5,4,4.5,5,5.5]
 #print(len(lista))
 for i in range(1,len(lista),1):
 	print(lista[i]+lista[i-1])
 """
+#Zad 8. Napisz skrypt, który za pomocą pętli while pobiera 10 liczb, a następnie dodaje do listy tylko liczby całkowite
+"""
+lista_intow = []
+lista_do_sprawdzenia = []
+i = 0
+while i<10:
+	lista_do_sprawdzenia.append(input("Podaj " + str(i+1) + " liczbe:"))
+	#print(i)
+	i+=1
 
+print(lista_do_sprawdzenia)
+#i=0
+for i in range(0,len(lista_do_sprawdzenia),1):
+	#if type(lista_do_sprawdzenia[i])==int:
+	if int(float(lista_do_sprawdzenia[i])) == float(lista_do_sprawdzenia[i]):
+		lista_intow.append(int(float(lista_do_sprawdzenia[i])))
+
+print(lista_intow)
+"""
 
