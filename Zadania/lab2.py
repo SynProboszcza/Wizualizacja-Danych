@@ -134,9 +134,23 @@ print(suma)
 # 
 # 
 """
+"""
+a = input("daj liczbę: ")
+b = input("daj liczbę2: ")
 
-
-
+try:
+	wynik = int(a)/int(b)
+except ZeroDivisionError as e:
+	raise e
+print(wynik)
+"""
+a = 15
+b = 123
+c = 9090
+s1 = "show me the {}".format("money")
+print(s1)
+print('{:d} {:f}'.format(a, b))
+print(b)
 
 
 
