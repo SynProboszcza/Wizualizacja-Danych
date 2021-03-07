@@ -137,3 +137,16 @@ for i in lista:
 #nie wiem czy prawidłowo zrozumiałem zadanie
 """
 
+#Zad 10. Napisz skrypt, w którym użytkownik ma podać liczbę i który będzie wyłapywał błąd gdy użytkownik poda literę zamiast cyfry.
+"""
+a = input("Podaj liczbę ;)\n:")
+try:
+	#print(type(a))
+	float(a)/float(a)
+	#przeprowadzam operację matematyczną, której nie da się zrobić ze stringami
+	#bo da sie je dodawać/mnożyć
+except ValueError:
+	print("to nie jest liczba!!!!!!!!!111!1!!!1oneone")
+
+print("Gitówa liczba, dobrze że słuchasz się komputera ;;;;)))))")
+"""
