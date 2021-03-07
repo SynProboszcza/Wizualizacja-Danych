@@ -37,6 +37,7 @@ print(slownik)
 #wrocic do tego, nie rozumiem o co chodzi z tym kluczem bo nie moze on byc duplikatem
 """
 #Zad 3. Stwórz skrypt, gdzie utworzysz słownik z nazwami przedmiotów z obecnego semestru oraz ich skrótami. Policz liczbę elementów w słownik
+"""
 przedmioty = {
 	"Wizualizacja danych":"WD",
 	"CAD komputerowe wspomaganie programowania":"CAD-kwp",
@@ -48,5 +49,18 @@ przedmioty = {
 }
 print(przedmioty)
 print(len(przedmioty))
+"""
 
+#Zad 4. Napisz skrypt gdzie wczytasz liczbę dowolnego typu i podnieś ją do tej samej potęgi. Użyj funkcji input.
+"""
+wejscie = input("Podaj dowolną liczbęłę:")
+if float(wejscie)==int(float(wejscie)):
+	print("Int")
+	print((int(float(wejscie)**int(float(wejscie)))))
+else:
+	print("Float")
+	print((float(wejscie)**float(wejscie)))
+#wiem że to koszmarnie wygląda ale python nie pozwala zrobić czegoś takiego: int('1.0')
+#https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10
+"""
 
