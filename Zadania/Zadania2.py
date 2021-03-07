@@ -63,4 +63,12 @@ else:
 #wiem że to koszmarnie wygląda ale python nie pozwala zrobić czegoś takiego: int('1.0')
 #https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10
 """
+#Zad 5. Napisz skrypt gdzie wczytasz dowolny ciąg znaków, i policzysz wystąpienie litery a. Użyj instrukcji readline() i write()).
+
+"""
+import sys as system
+wejscie = system.stdin.readline()
+system.stdout.write(str(wejscie.count("a")))
+"""
+
 
