@@ -71,4 +71,17 @@ wejscie = system.stdin.readline()
 system.stdout.write(str(wejscie.count("a")))
 """
 
-
+#Zad 6. Wczytaj trzy liczby całkowite a,b,c i sprawdź czy liczba a jest parzysta oraz czy jednocześnie b>c
+"""
+a = int(input("a:"))
+b = int(input("b:"))
+c = int(input("c:"))
+if a%2==0 and b>c:
+	print("a jest parzysta i b>c")
+elif a%2==0:
+	print("a jest parzysta, ale b!>c")
+elif a%2!=0 and b>c:
+	print("a jest nieparzysta, ale b>c")
+elif a%2!=0:
+	print("a jest nieparzysta, i b!>c")
+"""
