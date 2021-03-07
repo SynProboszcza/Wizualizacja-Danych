@@ -114,3 +114,26 @@ for i in range(0,len(lista_do_sprawdzenia),1):
 print(lista_intow)
 """
 
+#Zad 9. Napisz skrypt, który rysuje następującą literę
+"""
+OOOOOO
+O    O
+O    O - 6x6 o
+O    O
+O    O
+OOOOOO
+Etapy wykonania ćwiczenia:
+Deklarujemy jedną następującą listę [1,2,3,4,5,6]. 
+Następnie za pomocą pętli i instrukcji warunkowej wykonujemy odpowiednie działania. 
+Trzeba wykorzystać zagnieżdżenia.
+"""
+"""
+lista = [1,2,3,4,5,6]
+for i in lista:
+	if i == 1 or i == 6:
+		print("O"*6)
+	elif i == 2 or i == 3 or i == 4 or i == 5:
+		print("O    O")
+#nie wiem czy prawidłowo zrozumiałem zadanie
+"""
+
