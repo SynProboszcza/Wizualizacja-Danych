@@ -85,3 +85,13 @@ elif a%2!=0 and b>c:
 elif a%2!=0:
 	print("a jest nieparzysta, i b!>c")
 """
+
+#Zad 7. Napisz skrypt, gdzie stworzysz listę składającą się z liczb typu int i float. Następnie za pomocą pętli for oblicz sumę elementu obecnego z poprzednim.
+"""
+lista = [1,1.5,2,2.5,3,3.5,4,4.5,5,5.5]
+#print(len(lista))
+for i in range(1,len(lista),1):
+	print(lista[i]+lista[i-1])
+"""
+
+
