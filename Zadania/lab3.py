@@ -14,9 +14,10 @@ except ValueError:
     print("błędnie")
 """
 
+lista = [x**2 for x in range(10)]
 
 
-
+lista = [3**x for x in range(10)]
 
 
 
