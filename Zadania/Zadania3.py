@@ -10,7 +10,7 @@ print(C)
 #Zad2
 # Wygeneruj losowo 10 elementów, zapisz je do listy1,
 # następnie wykorzystując Python Comprehension zdefiniuj nową listę,
-# która będzie zawierała tylko parzyste elementy 
+# która będzie zawierała tylko parzyste elementy
 """
 import random
 print(int(random.random()*100))
@@ -82,3 +82,23 @@ def poleTrapezu(a=9,b=4,h=12):
 poleTrapezu()
 poleTrapezu(5,1,10)
 """
+
+"""
+#Zad6
+# Zdefiniuj funkcję która będzie liczyć iloczyn elementów ciągu.
+# Parametry funkcji a1 (wartość początkowa), b (wielkość o ile mnożone są kolejne elementy), ile (ile elementów ma mnożyć)
+# Ponadto funkcja niech przyjmuje wartości domyślne: a = 1, b = 4, ile = 10
+def iloczynElementowCiagu(a1=1,b=4,ile=10):
+	if b!=1:
+		S = a1*((1-b**ile)/(1-b))
+	else:
+		S = a1*ile
+
+	print(S)
+
+
+iloczynElementowCiagu()
+iloczynElementowCiagu(1,2,5) # spodziewane 31
+"""
+
+
