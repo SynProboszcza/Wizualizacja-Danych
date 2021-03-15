@@ -70,3 +70,15 @@ def czyProstokatny(a,b,c):
 print(czyProstokatny(3,4,5))
 print(czyProstokatny(5,12,13))
 """
+
+
+
+#Zad5
+# Zdefiniuj funkcje która policzy pole trapezu. Funkcja ma przyjmować wartości domyślne.
+"""
+def poleTrapezu(a=9,b=4,h=12):
+	print(((a+b)*h)/2)
+
+poleTrapezu()
+poleTrapezu(5,1,10)
+"""
