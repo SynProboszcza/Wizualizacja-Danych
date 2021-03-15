@@ -164,4 +164,13 @@ geometryczne.test()
 #nth(a1,r,n):
 print(arytmetyczne.nth(1,1,5))
 
+#sum(a1,r,n):
+print(arytmetyczne.sum(1,1,5))
+
+#nth(a1,q,n):
+print(geometryczne.nth(1,2,5))
+
+#sum(a1,q,n):
+print(geometryczne.sum(1,2,5))
+print(geometryczne.sum(1,1,5))
 
