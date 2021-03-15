@@ -142,8 +142,26 @@ produkty = {
 cenaZakupow(produkty)
 """
 
+#Zad9
+# Stwórz pakiet ciągi. Jeden moduł niech dotyczy działań i wzorów związanych z ciągami arytmetycznymi,
+# a drugi niech dotyczy działań i wzorów związanych z ciągami geometrycznymi.
 
+"""
+#aryt
+def test():
+	print("aryt")
 
+#geo
+def test():
+	print("geo")
 
+"""
+from Ciagi import *
+
+arytmetyczne.test()
+geometryczne.test()
+
+#nth(a1,r,n):
+print(arytmetyczne.nth(1,1,5))
 
 
