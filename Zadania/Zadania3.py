@@ -54,3 +54,19 @@ sztuki = [list(produkty.keys())[x] for x in range(len(produkty)) if list(produkt
 print(sztuki)
 """
 
+#Zad 4
+# Zdefiniuj funkcje, która sprawdzi czy trójkąt jest prostokątny.
+"""
+def czyProstokatny(a,b,c):
+	if a**2 + b**2 == c**2:
+		return True
+	elif a**2 + c**2 == b**2:
+		return True
+	elif c**2 + b**2 == a**2:
+		return True
+	else:
+		return False
+
+print(czyProstokatny(3,4,5))
+print(czyProstokatny(5,12,13))
+"""
