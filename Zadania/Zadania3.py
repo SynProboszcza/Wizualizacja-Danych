@@ -100,5 +100,50 @@ def iloczynElementowCiagu(a1=1,b=4,ile=10):
 iloczynElementowCiagu()
 iloczynElementowCiagu(1,2,5) # spodziewane 31
 """
+#Zad7
+
+
+
+#Zad8
+# Napisz funkcję, która wykorzystuje symbol **.
+# Funkcja ma przyjmować listę zakupów w postaci: klucz to nazwa produktu a wartość to jego koszt.
+# Funkcja ma zliczyć ile jest wszystkich produktów w ogóle i zwracać całościową wartość tych produktów.
+"""
+def cenaZakupow(lista):
+	# "nazwa":"koszt"
+	print("Liczba kupionych rzeczy: " + str(len(lista)))
+	suma = 0.0
+	for x in range(len(lista)):
+		suma += float(list(lista.values())[x])
+	print("Cena kupionych rzeczy: " + str(suma))
+
+
+produkty = {
+	"Cukierki":"5.00",
+	"Draże":"7.00",
+	"Gra komputerowa":"2.05",
+	"Lays Paprykowe":"6.00",
+	"KitKat":"4.00",
+	"Cheetos Spirals":"1.00",
+	"McNuggets":"7.00",
+	"Popcorn maślany":"8.00",
+	"Draże z orzechami":"9.00",
+	"Masło":"6.00",
+	"Cukierki pudrowe":"5.00",
+	"Ser":"4.00",
+	"Szynka":"6.00",
+	"Mleko":"1.00",
+	"Woda gazowana":"5.00",
+	"Woda niegazowana":"7.00",
+	"Tymbark jabłko-mięta":"9.00",
+	"Caprio":"3.00"
+}
+
+cenaZakupow(produkty)
+"""
+
+
+
+
 
 
