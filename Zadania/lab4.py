@@ -17,6 +17,8 @@ print(obiekt.tekst)
 """
 
 class Ksztalt:
+	#te __ to niby prywatne, ale tak naprawde to nie
+	__boczek__ = "boczek"
 	def __init__(self,x,y):
 		self.x = x
 		self.y = y
@@ -32,18 +34,32 @@ class Ksztalt:
 	def skalowanie(self,czynnik):
 		self.x *= czynnik
 		self.y *= czynnik
+	def zmienTekst(self,tekst):
+		tekst += " to jest napis"
+		return tekst
+
+
+
 
 prostakat = Ksztalt(2,5)
+
 print(prostakat.opis)
 print(prostakat.pole())
 print(prostakat.suma())
 print(prostakat.obwod())
+
 prostakat.dodajOpis("zerotwo")
 print(prostakat.opis)
+
 prostakat.skalowanie(3)
 print(prostakat.pole())
 print(prostakat.suma())
 print(prostakat.obwod())
 
+print(prostakat.zmienTekst("qwe"))
+
+print(prostakat.__boczek__)
+prostakat.__boczek__ = "nieboczek"
+print(prostakat.__boczek__)
 
 
