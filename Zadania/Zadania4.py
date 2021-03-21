@@ -72,7 +72,51 @@ print()
 zak.ile_kosztuje()
 """
 
+#Zad5
+# Utwórz klasę, która definiuje ciągi arytmetyczne.
+# Wartości powinny być przechowywane jako atrybut.
+# Klasa powinna mieć metody: ...
+
+"""
+from math import *
+
+class CiagiA:
+    def __init__(self,a1,r,n):
+        self.a1 = float(a1)
+        self.a2 = float(a1+r)
+        self.a3 = float(a1+2*r)
+        self.r = float(r)
+        self.n = float(n)
+    def wyswietl_dane(self):
+        print(self.a1)
+        print(self.a2)
+        print(self.a3)
+        print(self.r)
+        print(self.n)
+    def pobierz_elementy(self):
+        self.a1 = float(input("Podaj a1:"))
+        self.a2 = float(input("Podaj a2:"))
+        self.a3 = float(input("Podaj a3:"))
+    def pobierz_parametry(self):
+        self.a1 = float(input("Podaj a1:"))
+        self.r = float(input("Podaj r:"))
+        self.n = float(input("Podaj n:"))
+    def policz_sume(self):
+        suma = ((2*self.a1+(self.n-1)*self.r)/2)*self.n
+        print(suma)
+    def policz_elementy(self):
+        print(self.a1+(self.n-1)*self.r)
 
 
+#           (a1,r,n)
+ciag = CiagiA(1,1,7)
+
+ciag.wyswietl_dane()
+ciag.pobierz_elementy()
+ciag.pobierz_parametry()
+# ciag.wyswietl_dane()
+ciag.policz_sume()
+ciag.policz_elementy()
+"""
 
 
