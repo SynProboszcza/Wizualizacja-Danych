@@ -119,4 +119,59 @@ ciag.policz_sume()
 ciag.policz_elementy()
 """
 
+#Zad6
+# Stwórz klasę Robaczek, która będzie sterować ruchami Robaczka.
+# Klasa powinna przechowywać współrzędne x, y, krok
+# (stała wartość kroku dla Robaczka) i powinna mieć
+# następujące metody: init, lewo/prawo/góra/dół, gdzie_jestes
 
+"""
+class Robaczek:
+    def __init__(self,x,y,krok):
+        self.x = x
+        self.y = y
+        self.krok = krok
+    def idz_w_gore(self,y):
+        self.y += y*self.krok
+    def idz_w_dol(self,y):
+        self.y -= y*self.krok
+    def idz_w_lewo(self,x):
+        self.x -= x*self.krok
+    def idz_w_prawo(self,x):
+        self.x += x*self.krok
+    def pokaz_gdzie_jestes(self):
+        print("x: " + str(self.x))
+        print("y: " + str(self.y))
+
+# klocek = Robaczek(0,0,1)
+# klocek.pokaz_gdzie_jestes()
+# print(":")
+# klocek.idz_w_gore(1)
+# klocek.pokaz_gdzie_jestes()
+# print(":")
+# klocek.idz_w_dol(1)
+# klocek.pokaz_gdzie_jestes()
+# print(":")
+# klocek.idz_w_lewo(1)
+# klocek.pokaz_gdzie_jestes()
+# print(":")
+# klocek.idz_w_prawo(1)
+# klocek.pokaz_gdzie_jestes()
+
+# druga żeby sprawdzić czy działa dobrze
+
+# klocek2 = Robaczek(0,0,3)
+# klocek2.pokaz_gdzie_jestes()
+# print(":")
+# klocek2.idz_w_gore(1)
+# klocek2.pokaz_gdzie_jestes()
+# print(":")
+# klocek2.idz_w_dol(1)
+# klocek2.pokaz_gdzie_jestes()
+# print(":")
+# klocek2.idz_w_lewo(1)
+# klocek2.pokaz_gdzie_jestes()
+# print(":")
+# klocek2.idz_w_prawo(1)
+# klocek2.pokaz_gdzie_jestes()
+"""
