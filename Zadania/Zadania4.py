@@ -11,10 +11,10 @@ plik.close()
 #Zad2
 # Odczytaj plik z poprzedniego zadania i wyświetl jego zawartość
 plik = open("liczby%4", "r", encoding="utf8")
-print(plik.read(3))
+print(plik.read())
 plik.close()
-
 """
+
 
 #Zad3
 # Wykorzystując komendę with zapisz kilka linijek tekstu
@@ -142,6 +142,10 @@ class Robaczek:
     def pokaz_gdzie_jestes(self):
         print("x: " + str(self.x))
         print("y: " + str(self.y))
+"""
+
+"""
+
 
 # klocek = Robaczek(0,0,1)
 # klocek.pokaz_gdzie_jestes()
