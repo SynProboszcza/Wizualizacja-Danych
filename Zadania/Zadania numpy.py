@@ -30,8 +30,20 @@ def potegi(podstawa, ilosc):
     return np.logspace(1,ilosc,ilosc,base=podstawa)
 """
 
-
-
+#Zad5
+#Napisz funkcję, która:
+#•   Na wejściu przyjmuje jeden parametr określający długość wektora
+#•   Na podstawie parametru generuj wektor, ale w kolejności odwróconej
+#•   Generuj macierz diagonalną z w/w wektorem jako przekątną
+"""
+def wektor(n):
+    a = np.arange(n,0,-1)
+    #lista = np.arange(n*n).reshape((n,n))
+    lista = np.zeros((n,n))
+    for i in range(int(lista.size/n)):
+        lista[i][i] = a[i]
+    return lista
+"""
 
 
 
