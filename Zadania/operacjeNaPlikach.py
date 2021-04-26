@@ -21,3 +21,11 @@ with open("test","r",encoding="utf8") as plik:
 	for linie in plik:
 		print(linie, end="")
 plik.close()
+
+
+polskie_znaki = "żółćęśąźńŻÓŁĆĘŚĄŹŃ"
+liczba_polskich_znakow = 0;
+for x in "ąąąaaaąąą":
+    for y in polskie_znaki:
+        if x == y:
+            liczba_polskich_znakow +=1

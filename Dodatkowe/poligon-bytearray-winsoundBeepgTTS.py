@@ -83,8 +83,8 @@ blitz jest koksem
 ff15
 
 str1 = "papież polak dżarvan czwarty, bot od dawna jest otwarty"
-
-
+str1 = "i want to be your dziaddy"
+"aj łant to bi jur dziaddy"
 
 from mpyg321.mpyg321 import MPyg321Player
 player = MPyg321Player()
@@ -92,10 +92,41 @@ player.play_song("/path/to/some_mp3.mp3")
 
 
 
+from tqdm.auto import trange
+from time import sleep
+
+for i in trange(4, desc='1st loop'):
+    for j in trange(5, desc='2nd loop'):
+        for k in trange(50, desc='3rd loop', leave=False):
+            sleep(0.01)
 
 
+from tqdm import tqdm, trange
+from random import random, randint
+from time import sleep
 
+with trange(10) as t:
+    for i in t:
+        # Description will be displayed on the left
+        # t.set_description('GEN %i' % i)
+        # Postfix will be displayed on the right,
+        # formatted automatically based on argument's datatype
+        # t.set_postfix(loss=random(), gen=randint(1,999), str='h',
+        #               lst=[1, 2])
+        sleep(0.1)
 
+with tqdm(total=10, bar_format="{postfix[0]} {postfix[1][value]:>8.2g}",
+          postfix=["Batch", dict(value=0)]) as t:
+    for i in range(10):
+        sleep(0.1)
+        t.postfix[1]["value"] = i / 2
+        t.update()
 
+tab=[]
+for x in range(1001):
+    tab[x] = (2**x)/factorial(x)
 
+[(2**x)/factorial(x) for x in range(10)]
+a = np.array([(3**x)/factorial(x) for x in range(10)])
+a.sum()
 
