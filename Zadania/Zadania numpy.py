@@ -67,7 +67,44 @@ for i in range(len(slowo3)):
 
 print(wykreslanka)
 """
+#Zad7
+#Napisz funkcję, która wygeneruje macierz wielowymiarową postaci:
+#[[2 4 6]
+# [4 2 4]
+# [6 4 2]]
+#Przy założeniach:
+#funkcja przyjmuje parametr n, który określa wymiary macierzy jako n*n i umieszcza wielokrotność liczby 2 na kolejnych jej przekątnych rozchodzących się od głównej przekątnej.
+"""
+def macierz2(n):
+    a = np.zeros((n,n))
+    for i in range(n):
+        np.diag(a,)
+"""
+########################dokonczyc, bo na razie nie wiem jak to zrobic
+#np.diag(v,k)
+#np.fill_diag
+#a = np.zeros((n,n))
+#a = np.arange(n*n).reshape((n,n))
 
+#Zad8
+#Napisz funkcję, która:
+#•   jako parametr wejściowy będzie przyjmowała tablicę wielowymiarową numpy oraz parametr ‘kierunek’,
+#•   parametr kierunek określa czy tablica wejściowa będzie dzielona w pionie czy poziomie
+#•   funkcja dzieli tablicę wejściową na pół (napisz warunek, który wyświetli komunikat, że ilość wierszy lub kolumn, w zależności od kierunku podziału, nie pozwala na operację)
+
+###################
+
+
+#Zad9
+#Wykorzystaj poznane na zajęciach funkcje biblioteki Numpy i stwórz macierz 5x5, która będzie zawierała kolejne wartości ciągu Fibonacciego.
+"""
+fib_tab = [0,1,1]
+for i in np.arange(21,-1,-1):
+    fib_tab.append(fib_tab[len(fib_tab)-1]+fib_tab[len(fib_tab)-2])
+fib_tab = np.array(fib_tab)
+fib_tab = fib_tab.reshape(5,5)
+print(fib_tab)
+"""
 
 
 
