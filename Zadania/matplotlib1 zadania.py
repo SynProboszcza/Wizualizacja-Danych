@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 #Zad1
 # tab = [1/x for x in range(20,41)]
@@ -18,6 +19,22 @@ import matplotlib.pyplot as plt
 # plt.ylabel("1/x")
 # plt.margins(0)
 # plt.ylim(ymin=0.02)
+# plt.show()
+
+#Zad3
+
+# tab_sin = [np.sin(x) for x in np.linspace(0,46,460)]
+# tab_cos = [np.cos(x) for x in np.linspace(0,46,460)]
+# plt.subplot(2,1,1)
+# plt.plot(tab_sin, label="sin(x)")
+# plt.ylabel("y")
+# plt.xlabel("x")
+# plt.legend()
+# plt.subplot(2,1,2)
+# plt.plot(tab_cos, label="cos(x)")
+# plt.xlabel("x")
+# plt.ylabel("y")
+# plt.legend()
 # plt.show()
 
 
