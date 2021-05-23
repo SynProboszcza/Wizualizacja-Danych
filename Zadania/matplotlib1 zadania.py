@@ -37,6 +37,19 @@ import numpy as np
 # plt.legend()
 # plt.show()
 
+#Zad4
+
+# tab_sin = [np.sin(x) for x in np.linspace(0,46,460)]
+# tab_sin2 = [np.sin(x)+2 for x in np.linspace(46,0,460)]
+# plt.plot(tab_sin2, "orange", label="sin(x)")
+# plt.plot(tab_sin, "blue", label="sin(x)")
+# plt.xlabel("x")
+# plt.ylabel("y")
+# plt.legend()
+# plt.show()
+
+#Zad5
+
 
 
 
