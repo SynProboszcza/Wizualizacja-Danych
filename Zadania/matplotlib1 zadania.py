@@ -62,10 +62,17 @@ import numpy as np
 # plt.ylabel("sepal width")
 # plt.show()
 
+#Zad6
+
+# import pandas as pd
 
 
+#Zad 7
 
-
+# import pandas as pd
+#
+# orders = pd.read_csv("zamowienia.csv", sep=";", decimal=".", header=0)
+# print(orders)
 
 
 
