@@ -50,6 +50,22 @@ import numpy as np
 
 #Zad5
 
+# import pandas as pd
+# #matplotlib na początku dokumentu
+# #numpy tez
+#
+# iris = pd.read_csv("iris.data", sep=",", decimal=".", header=None)
+# iris = iris.cumsum()
+# c = np.random.randn(50)
+# iris.plot()
+# plt.xlabel("sepal length")
+# plt.ylabel("sepal width")
+# plt.show()
+
+
+
+
+
 
 
 
